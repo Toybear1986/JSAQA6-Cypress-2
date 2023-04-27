@@ -1,0 +1,30 @@
+[
+  {
+    "name": "happyPath",
+    "data": {
+      "email": "qamid@qamid.ru",
+      "pass": "qamid"
+    }
+  },
+  {
+    "name": "sadPathNullEmail",
+    "data": {
+      "email": null,
+      "pass": "qamid"
+    }
+  },
+  {
+    "name": "sadPathNullPass",
+    "data": {
+      "email": "qamid@qamid.ru",
+      "pass": null
+    }
+  },
+  {
+    "name": "sadPathWrongPass",
+    "data": {
+      "email": "qamid@qamid.ru",
+      "pass": "wrong"
+    }
+  }
+]

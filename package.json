@@ -1,0 +1,18 @@
+{
+  "name": "jsaqa6-cypress-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy": "cypress open",
+    "cy:headless:chrome": "cypress run --headless --browser chrome",
+    "cy:headed:chrome": "cypress run --headed --browser chrome",
+    "cy:chrome:cloudrec": "cypress run --browser chrome --record --key abfdd8ae-6507-4b12-840f-ead30e82a548"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.11.0"
+  }
+}

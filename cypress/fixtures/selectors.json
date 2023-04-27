@@ -1,0 +1,32 @@
+{
+  "main": {
+    "title": ".page-header__title",
+    "days": ".page-nav__day",
+    "today": ".page-nav__day_today .page-nav__day-week",
+    "seanceTime": ".movie-seances__time"
+  },
+  "login": {
+    "title": ".page-header__title",
+    "subtitle": ".page-header__subtitle",
+    "formTitle": ".login__title",
+    "labelForEmail": ".login label[for=email]",
+    "inputEmail": "[type=email]",
+    "labelForPass": ".login label[for=pwd]",
+    "submit": "[type=submit]",
+    "inputPass": "[type=password]"
+  },
+  "admin": {
+    "section": ".conf-step__title",
+    "activeHall": "div:has(.conf-step__seances-movie)>h3",
+    "sales": "section[id='start-sales'] >div > ul > li > .conf-step__radio[value=",
+    "salesButton": "section[id='start-sales'] > div > button"
+  },
+  "auth": {
+    "error": "body"
+  },
+  "hallSchema":{
+    "selectRow": ".buying-scheme__row:nth-of-type",
+    "selectChair": ".buying-scheme__chair:nth-of-type",
+    "subminBooking": ".acceptin-button"
+  }
+}
