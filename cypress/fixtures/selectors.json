@@ -3,6 +3,7 @@
     "title": ".page-header__title",
     "days": ".page-nav__day",
     "today": ".page-nav__day_today .page-nav__day-week",
+    "hallWithActiveSeances": "div.movie-seances__hall:has(.movie-seances__time)",
     "seanceTime": ".movie-seances__time"
   },
   "login": {
