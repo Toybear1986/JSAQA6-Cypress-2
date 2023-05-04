@@ -1,5 +1,5 @@
-import selectors from "../fixtures/selectors.json";
-import logindata from "../fixtures/logindata.json";
+import selectors from "../../fixtures/selectors.json";
+import logindata from "../../fixtures/logindata.json";
 const login = selectors.login;
 
 describe("login page to admin page should work properly", () => {

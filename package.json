@@ -8,10 +8,20 @@
     "cy:headless:chrome": "cypress run --headless --browser chrome",
     "cy:headed:chrome": "cypress run --headed --browser chrome",
     "cy:chrome:cloudrec": "cypress run --browser chrome --record --key abfdd8ae-6507-4b12-840f-ead30e82a548",
-    "cy:ci:booking": "cypress run --group booking --browser chrome --ci-build-id 2 --spec 'cypress/e2e/booking.cy.js' --record --key abfdd8ae-6507-4b12-840f-ead30e82a548",
-    "cy:ci:login": "cypress run --group login --browser chrome --ci-build-id 2 --spec 'cypress/e2e/loginToAdminPanel.cy.js' --record --key abfdd8ae-6507-4b12-840f-ead30e82a548",
-    "cy:ci:main": "cypress run --group main --browser chrome --ci-build-id 2 --spec 'cypress/e2e/mainpage.cy.js' --record --key abfdd8ae-6507-4b12-840f-ead30e82a548",
-    "cy:parallel": "run-p -c --aggregate-output cy:ci:booking cy:ci:login cy:ci:main"
+    "cy:ci:booking": "cypress run --group booking --browser chrome --ci-build-id 3 --spec 'cypress/e2e/booking/booking.cy.js' --record --key abfdd8ae-6507-4b12-840f-ead30e82a548",
+    "cy:ci:login": "cypress run --group login --browser chrome --ci-build-id 3 --spec 'cypress/e2e/login/loginToAdminPanel.cy.js' --record --key abfdd8ae-6507-4b12-840f-ead30e82a548",
+    "cy:ci:main": "cypress run --group main --browser chrome --ci-build-id 3 --spec 'cypress/e2e/mainpage.cy.js' --record --key abfdd8ae-6507-4b12-840f-ead30e82a548",
+    "cy:parallel": "run-p -c --aggregate-output cy:ci:booking cy:ci:login cy:ci:main",
+    "cy:ci:all:chrome": "cypress run --group chrome --browser chrome --spec 'cypress/e2e/' --record",
+    "cy:ci:all:electron": "cypress run --group electron --browser electron --spec 'cypress/e2e/' --record",
+    "cy:ci:all:edge": "cypress run --group edge --browser edge --spec 'cypress/e2e/' --record",
+    "cy:ci:parallel:browsers": "run-p -c cy:ci:all:chrome cy:ci:all:electron",
+    "cy:ci:bookingdir": "cypress run --group booking --browser chrome --spec 'cypress/e2e/booking/' --record",
+    "cy:ci:logindir": "cypress run --group login --browser chrome --spec 'cypress/e2e/login/' --record",
+    "cy:ci:parallel:directories": "run-p -c cy:ci:bookingdir cy:ci:logindir" 
+
+        
+
   },
   "keywords": [],
   "author": "",
